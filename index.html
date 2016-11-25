@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<!--By Emilia  Cabrera-->
+<html>
+   
+  <!--bExtra methods-->
+  <script>
+	  var classesIn = new Array();
+	  var clubsIn = new Array();
+	  var sportsIn = new Array();
+  </script>
+
+  <script src="indexScripts.js">
+		checkBoxes();
+		onSleepChange();
+		function chooseClassFunction(name){
+			document.getElementById(name).classList.toggle("show");
+		}
+
+		function hideClassFunction(){
+			
+			var list = document.getElementsByClassName('dropdownContent');
+			for(var i = 0; i < list.length; i++) {
+				list[i].classList.toggle("show", false);
+			}
+		}
+		
+		function hideDivFunction(){
+			var list = document.getElementsByClassName("dropdown-content");
+			for(var i = 0; i < list.length; i++) {
+				list[i].classList.toggle("show", false);
+			}
+		}
+	</script>
+
+	<head>
+
+
+<!--Extra methods-->
+<script>
+	var classesIn = new Array();
+	var clubsIn = new Array();
+	var sportsIn = new Array();
+</script>
+
+<script src="indexScripts.js">
+	checkBoxes();
+	onSleepChange();
+</script>
+
+	<title>Schedule Simulator</title>
+	<link rel="icon" type="image/png" href="images/woodsonlogo.png">
+	<!-- CSS
+   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="CSS/style.css" rel="stylesheet"/>
+	<link href="CSS/responsive.css" rel="stylesheet"/>
+	</head>
+
+<body>
+<nav class="fixed-nav-bar">
+	<!--<img src="images/PUTlogotrans.png" alt="PUT Logo" style="width:144px;height:50px;margin-right: 30px; float:right;">-->
+	<img src="images/Something cool.png" alt="Woodson Logo" style="width:150px;height:150px;margin-right: 40px; float:left;">
+	<div id="title"><h1>Schedule Simulator</h1>
+		<a href="Homepage.html" id="homepage" class="button-primary">Homepage</a>
+		<a onClick="checkBoxes()" id="generate" class="button-primary">Generate</a>
+	</div>
+
+</nav>
+
+<div class="container">
+	<div class="tabHeader" onclick="hideDivFunction(); chooseClassFunction('hiddenDropdown-classes');">
+		<h3>Classes</h3>
+	</div>
+	
+	<div style="overflow-x:auto; overflow-y:visible;">
+		<table id= "hiddenDropdown-classes" class="dropdown-content" align="center">
+				<tr>
+				<td>
+					<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownMath');"><h4>Math</h4></div>
+						<div id= "hiddenDropdownMath" class = "dropdownContent">
+						<form id = "math">
+									
+						</form>
+						</div>
+						
+				</td>
+
+				<td>
+					<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownScience');"><h4>Science</h4></div>
+					<div id= "hiddenDropdownScience" class = "dropdownContent">
+						<form id = "science">
+
+						</form>
+					</div>
+				</td>
+				
+				<td>
+					<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownEnglish')" ><h4>English</h4></div>
+					<div id= "hiddenDropdownEnglish" class ="dropdownContent">
+						<form  id="english">
+						</form>
+					</div>
+				</td>
+				
+				<td>
+					<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownSocialstds')" ><h4>Social Studies</h4></div>
+						<div id= "hiddenDropdownSocialstds" class = "dropdownContent">
+							<form  id = "social science">
+
+							</form>
+						</div>
+				</td>
+				</tr>
+				
+				<tr>
+				<td>
+					<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownWrldLang')" ><h4>Languages</h4></div>
+						<div id= "hiddenDropdownWrldLang" class = "dropdownContent">
+							<form  id = "World Languages">
+								
+							</form>
+						</div>
+				</td>
+				
+				<td>
+					<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownPerformArt')" ><h4>Performing Arts</h4></div>
+						<div id= "hiddenDropdownPerformArt" class = "dropdownContent">
+							<form  id = "performing arts">
+
+							</form>
+						</div>
+				</td>
+				
+				<td>
+					<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownVisualArt')" ><h4>Visual Arts</h4></div>
+					<div id= "hiddenDropdownVisualArt" class = "dropdownContent">
+						<form  id = "visual arts">
+
+						</form>
+					</div>
+				</td>
+							
+				<td>
+					<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownPe')"><h4>Physical Education</h4></div>
+					<div id= "hiddenDropdownPe" class = "dropdownContent" >
+						<form  id = "health">
+						</form>
+					</div>
+				</td>
+				</tr>
+				
+				<tr>
+				<td>			
+							<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownTech')" ><h4>Technology</h4></div>
+							<div id= "hiddenDropdownTech" class = "dropdownContent" >
+								<form  id = "technology">
+
+								</form>
+							</div>
+				</td>
+				
+				<td>				
+							<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownBusiness')"><h4>Business/Information</h4></div>
+							<div id= "hiddenDropdownBusiness" class = "dropdownContent" >
+								<form  id = "business">
+
+								</form>
+							</div>
+				</td>
+				
+				<td>			
+							<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownRes')"><h4>Student Resources</h4></div>
+							<div id= "hiddenDropdownRes" class = "dropdownContent"  >
+								<form  id = "resources">
+
+								</form>
+							</div>
+				</td>
+				
+				<td>			
+							<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownFam')"><h4>Family and Consumer Sciences</h4></div>
+							<div id= "hiddenDropdownFam" class = "dropdownContent" >
+								<form  id = "family">
+
+								</form>
+							</div>
+				</td>
+				</tr>
+			</table>
+		</div>
+
+			<!--SPORTS-->
+			<div class="tabHeader" onclick="hideDivFunction(); chooseClassFunction('hiddenDropdown-sports');">
+				<h3>Sports</h3>
+			</div>
+			<div style="overflow-x:auto; overflow-y:visible;">
+				<table id= "hiddenDropdown-sports" class="dropdown-content" align="center">
+					<tr>
+						<td>
+							<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownFall')" ><h4>Fall</h4></div>
+							<div id= "hiddenDropdownFall" class = "dropdownContent" >
+								<form  id = "fall">
+
+								</form>
+							</div>
+						</td>
+						<td>
+							<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownWinter')" ><h4>Winter</h4></div>
+							<div id= "hiddenDropdownWinter" class = "dropdownContent" >
+								<form  id = "winter">
+
+								</form>
+							</div>
+						</td>
+						<td>
+							<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownSpring')" ><h4>Spring</h4></div>
+							<div id= "hiddenDropdownSpring" class = "dropdownContent" >
+								<form  id = "spring">
+
+								</form>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			<!--CLUBS-->
+			<div class="tabHeader" onclick="hideDivFunction(); chooseClassFunction('hiddenDropdown-clubs');">
+				<h3>Clubs</h3>
+			</div>
+			
+			<div style="overflow-x:auto; overflow-y:visible;">
+				<table id= "hiddenDropdown-clubs" class="dropdown-content" align="center">
+					<tr>
+						<td>
+							<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownAcademic')" ><h4>Academic</h4></div>
+							<div id= "hiddenDropdownAcademic" class = "dropdownContent">
+								<form  id = "academic">
+
+								</form>
+							</div>
+						</td>
+						<td>
+							<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownArt')" ><h4>Arts and Literature</h4></div>
+							<div id= "hiddenDropdownArt" class = "dropdownContent" >
+								<form  id = "art">
+
+								</form>
+							</div>
+						</td>
+						<td>
+							<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownVolunteer')" ><h4>Volunteer</h4></div>
+							<div id= "hiddenDropdownVolunteer" class = "dropdownContent" >
+								<form  id = "volunteer">
+
+								</form>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownLanguages')" ><h4>Languages</h4></div>
+							<div id= "hiddenDropdownLanguages" class = "dropdownContent" >
+								<form  id = "languages">
+
+								</form>
+							</div>
+						</td>
+						<td>
+							<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownSports')" ><h4>Athletic</h4></div>
+							<div id= "hiddenDropdownSports" class = "dropdownContent" >
+								<form  id = "sports_clubs">
+
+								</form>
+							</div>
+						</td>
+						<td>
+							<div class="sectionHead" onclick="hideClassFunction(); chooseClassFunction('hiddenDropdownOther')" ><h4>Other</h4></div>
+							<div id= "hiddenDropdownOther" class = "dropdownContent" >
+								<form  id = "other">
+
+								</form>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div id= "hiddenDropdown-clubs" class="dropdown-content">
+				<form  id = "clubs">
+
+				</form>
+					
+            </div>
+				
+		</div>		
+
+	<script>
+		(function(){
+				var scheduleList;
+
+				var container;
+				
+				for(var i=0;i<Classes.length;i++)
+				{
+					if(Classes[i].header == "Mathematics"){
+						container = document.getElementById("math");
+					}
+					
+					if(Classes[i].header == "English"){
+						container = document.getElementById("english");
+
+					}
+					
+					if(Classes[i].header == "ESOL"){
+						container = document.getElementById("esol");
+
+					}
+					
+					if(Classes[i].header == "Social Studies"){
+						container = document.getElementById("social science");
+
+					}
+					
+					if(Classes[i].header == "Science"){
+						container = document.getElementById("science");
+
+					}
+					
+					if(Classes[i].header == "Fine and Visual Arts"){
+						container = document.getElementById("visual arts");
+					}
+					
+					if(Classes[i].header == "Fine and Performing Arts"){
+						container = document.getElementById("performing arts");
+					}
+					
+					if(Classes[i].header == "World Languages"){
+						container = document.getElementById("World Languages");
+					}
+					
+					if(Classes[i].header == "Student Resources"){
+						container = document.getElementById("resources");
+					}
+					
+					if(Classes[i].header == "Health and Physical Education"){
+						container = document.getElementById("health");
+					}
+					
+					if(Classes[i].header == "Business/Information Tech & Marketing"){
+						container = document.getElementById("business");
+
+					}
+					
+					if(Classes[i].header == "Technology and Engineering"){
+						container = document.getElementById("technology");
+
+					}
+					
+					if(Classes[i].header == "Family & Consumer Sciences"){
+						container = document.getElementById("family");
+					}
+					
+					if(container != null){
+					var input = document.createElement("input");
+					input.type = "checkbox";
+					input.value = Classes[i].name;
+					input.class = "checkbox";
+					input.id = "class";//'id' tells whether sport, club, or class
+					input.appendChild;
+					container.appendChild(input); // put it into the DOM
+						
+					var e = document.createElement("label");
+					e.setAttribute("class", "text"); 
+					e.title = Classes[i].courseDescription;
+					e.innerHTML = Classes[i].name + "<br>";
+					
+					container.appendChild(e);
+					}
+					
+				}
+				
+				for(var i=0; i<Clubs.length; i++){
+					container = document.getElementById("volunteer");
+						
+					if(Clubs[i].header == "academic"){
+						container = document.getElementById("academic");
+					}
+					
+					if(Clubs[i].header == "art"){
+						container = document.getElementById("art");
+					}
+					if(Clubs[i].header == "languages"){
+						container = document.getElementById("languages");
+					}
+					if(Clubs[i].header == "sports"){
+						container = document.getElementById("sports_clubs");
+					}
+					if(Clubs[i].header == "other"){
+						container = document.getElementById("other");
+					}
+					
+					if(container != null){
+						var input = document.createElement("input");
+						input.type = "checkbox";
+						input.value = Clubs[i].name;
+						input.id = "club"; //'id' tells whether sport, club, or class
+						input.appendChild
+						container.appendChild(input); // put it into the DOM
+						
+						var e = document.createElement("label");
+						e.setAttribute("class", "text"); 
+						e.innerHTML = Clubs[i].name + "<br>";
+						container.appendChild(e);
+					}
+				}
+
+                for(var i=0; i<Sports.length; i++){
+					container = document.getElementById("fall");
+						
+					if(Sports[i].header == "winter"){
+						container = document.getElementById("winter");
+					}
+					
+					if(Sports[i].header == "spring"){
+						container = document.getElementById("spring");
+					}
+					
+					if(container != null){
+                        var input = document.createElement("input");
+                        input.type = "checkbox";
+                        input.value = Sports[i].name;
+                        input.id = "sport"; //'id' tells whether sport, club, or class
+                        input.appendChild
+                        container.appendChild(input); // put it into the DOM
+                        
+                        var e = document.createElement("label");
+                        e.setAttribute("class", "text"); 
+                        e.innerHTML = Sports[i].name + "<br>";
+                        container.appendChild(e);
+					}
+                }
+				
+				
+			
+		}).call(this);	
+	</script>
+</html>
