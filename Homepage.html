@@ -1,0 +1,76 @@
+<!--By Emilia  Cabrera-->
+<html>
+	<head>
+		<title>Schedule Simulator</title>
+		<link rel="icon" type="image/png" href="images/woodsonlogo.png">
+		<link href="CSS/homepageStyle.css" rel="stylesheet"/>
+	</head>
+	<body>
+        <nav class="fixed-nav-bar">
+            <a href="http://www.fcps.edu/woodsonhs/"><img src="images/Something cool.png" alt="Woodson Logo" style="width:150px;height:150px;margin-right: 40px; float:left;"></a>
+			<div id="title"><h1>Schedule Simulator</h1>
+			 </div>				
+	   </nav>
+        
+		<nav id="left" class="column">
+			<ul>
+                <!--Change the URL to link it to the course picker.html or whatever it is-->
+                <li><a href="index.html" ><div><h2>Course Selection</h2></div></a></li>
+                <!--To get the web address of the video, youtube->share->embed->copy THAT entire line-->
+                <li><video width="480" height="320" controls="controls">
+					<source src="video.mp4" type="video/mp4">
+				</video></li>
+				<li id="instruction">
+					<ol>
+						<li>As you open up the Schedule Simulator, select the Course Selection tab at the top left of the screen.</li>
+						<li>Click the Classes tab to bring up the drop down menu of class subjects.  You can pick up to 7 classes.
+							<ol type="a">
+								<li>When you click each subject, you can click the checkboxes that correspond to the classes you will take.</li>
+								<li>If you are unsure about the descriptions for each class, hover your mouse over the individual classes and truncated course description of that class will be displayed. </li>
+							</ol>
+						</li>
+						<li>Then, click on the Sports and Clubs that you are hopeful in participating in.</li>
+						<li>After you have completely selected all the classes, sports, and clubs you want, go to the top of the page and click the Generate tab.  </li>
+						<li>You will be directed to a two week example schedule of your freshman year.
+							<ol type="a">
+								<li>All activities are color coordinated and conflicts are shown in bright red.</li>
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+			</ul>
+		</nav>
+	</body>
+	
+		<script>
+
+     if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) 
+    {
+        alert('This browser is inadequate. Please use Chrome');
+    }
+    else if(navigator.userAgent.indexOf("Chrome") != -1 )
+    {
+        //alert('Chrome');
+    }
+    else if(navigator.userAgent.indexOf("Safari") != -1)
+    {
+        alert('This browser is inadequate. Please use Chrome');
+    }
+    else if(navigator.userAgent.indexOf("Firefox") != -1 ) 
+    {
+         //alert('Firefox');
+    }
+    else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
+    {
+      alert('This browser is inadequate. Please use Chrome'); 
+    }  
+    else 
+    {
+       alert('unknown');
+    }
+	
+    
+
+	</script>
+</html>
