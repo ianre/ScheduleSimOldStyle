@@ -27,6 +27,15 @@ There is also 1 js file (all in javascript):
 
     This format only applies to sports. There's a different format for clubs and classes.
 
+    Now, there's also some intentionally obfuscated parts:
+    on lines 57 & 58
+        clubsIn.push(Stupid[0]);
+        clubsIn.push(Stupid[1]);
+    That means MUN
+    the function on line 134: function funcy()
+    that's also for MUN
+
+
 There are about 8 CCS files:
 
     All CSS stylesheets do is specify the font, size, color, spacing(padding), border and location of HTML information on a web page
