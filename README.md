@@ -72,7 +72,7 @@ And now, problems:
 
         *   The instructions run off outside of the page on Homepage.html
 
-
+        *   There are also actual coding errors that webstorm picked up. I'll try to resolve them later
 
 
 "yeah.... have fun" - Emily
