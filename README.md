@@ -2,14 +2,14 @@
 
 If you have any questions about the project, email me or read the README
 
-The project consists of 2 html
+The project consists of 2 html files
 
     homepage.html    -    The video, the gif of the library and the instructions
     index.html       -    Everything else, ie. course selection and the schedule itself
 
 I don't know yet what scheduleLayout does. Probably just formatting for the schedule
 
-There is also 1 js file (all in javascript)
+There is also 1 js file (all in javascript):
 
     indexScripts.js  -    As the name might imply, all the scripts that generate the schedule are here
                           Without the class info at the bottom, the scripts occupy about 500 lines of code
@@ -27,6 +27,24 @@ There is also 1 js file (all in javascript)
 
     This format only applies to sports. There's a different format for clubs and classes.
 
+There are about 8 CCS files:
+
+    normalize.css   -   /**
+                         * 1. Change the default font family in all browsers (opinionated).
+                         * 2. Correct the line height in all browsers.
+                         * 3. Prevent adjustments of font size after orientation changes in
+                         *    IE on Windows Phone and in iOS.
+                         */
+                         more info: https://github.com/necolas/normalize.css/blob/master/README.md
+    homepageStyle.css   -   takes care of smaller screens
+                            "
+                            Responsive web design makes your web page look good on all devices.
+                            Responsive web design uses only HTML and CSS.
+                            Responsive web design is not a program or a JavaScript.
+                            "
+
+    and the other 6 CCS, which do things, probably
+
 And now, problems:
 
         *   The entire schedule is written on javascript, so styling is complicated.
@@ -40,6 +58,8 @@ And now, problems:
         across all platforms if we use bootstrap well.
 
         *   Some classes are missing.
+
+        *   The instructions run off outside of the page on Homepage.html
 
 
 
