@@ -29,6 +29,8 @@ There is also 1 js file (all in javascript):
 
 There are about 8 CCS files:
 
+    All CSS stylesheets do is specify the font, size, color, spacing(padding), border and location of HTML information on a web page
+
     normalize.css   -   /**
                          * 1. Change the default font family in all browsers (opinionated).
                          * 2. Correct the line height in all browsers.
